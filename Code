@@ -8,7 +8,7 @@ from sklearn.metrics import silhouette_score
 
 
 # Loading the data
-file_path = "Database.xlsx" # Using the football database I made in another project
+file_path = "Full_DB.xlsx" # Using the football database I made in another project
 df = pd.read_excel(file_path, engine="openpyxl")
 X = df.iloc[:, 11:].dropna(axis=1)  # To remove the informations not needed to create new metrics
 
